@@ -1,6 +1,6 @@
-##### Todo-App
+######### Todo-App
 
-#### Project Overview
+###### Project Overview
 # An API App that allows users to GET, CREATE, UPDATE, and DELETE their todo tasks. 
 
 # Each task item contains the following information:
