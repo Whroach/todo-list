@@ -1,0 +1,84 @@
+###
+
+//Demo with one of these userIDs - [ 1, 2, 7, 9 ]
+
+GET http://localhost:3005/todo/7
+Content-Type: application/json
+
+{
+    "filters": {
+        "sort": null,
+        "searchProperty": "status",
+        "searchStr": "Pending"
+    }
+}
+
+###
+
+POST http://localhost:3005/todo/9
+Content-Type: application/json
+
+{
+    "tasksToCreate": [ 
+        {
+            "title": "Create a Button",
+            "description": "Make a button that returns hello world",
+            "status": "Pending",
+            "dueDate": "2022-05-01",
+            "categoryType": "Front End"
+        },
+        {
+            "title": "Prepare Final Proposal to have a Bevi machine in the office",
+            "description": "Gotta make sure our Engineers stay hydrated with a bevi machine.",
+            "status": "Pending",
+            "dueDate": "2022-12-25",
+            "categoryType": "Productivity"
+        },
+        {
+            "title": "Pair Programming",
+            "description": "Pair programming session with my lead. You will do great.",
+            "status": "In Progress",
+            "dueDate": "2022-04-06",
+            "categoryType": "Engineering"
+        },
+        {
+            "title": "Support Requests",
+            "description": "Something broke. No idea what but will look into it.",
+            "status": "Pending",
+            "dueDate": "2022-04-15",
+            "categoryType": "Bugs & Fixes"
+        },
+        {
+            "title": "Hackathon",
+            "description": "Build some kind of app that will help the teams day-to-day work.",
+            "status": "In Progress",
+            "dueDate": "2022-04-22",
+            "categoryType": "Engineering"
+        }   
+    ]
+}
+
+
+
+
+
+###
+
+PUT http://localhost:3005/todo/7
+Content-Type: application/json
+
+{
+    "taskId": 13,
+    "title": "Build a data compression algo",
+    "description": "Code like crazy",
+    "status": "Pending",
+    "dueDate": "2022-04-11T23:00:00.000Z",
+    "categoryType": "Engineering"
+}
+
+###
+
+
+DELETE http://localhost:3005/todo/19
+
+###
