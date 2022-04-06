@@ -1,20 +1,20 @@
-######### Todo-App
+# Todo-App
 
-###### Project Overview
-# An API App that allows users to GET, CREATE, UPDATE, and DELETE their todo tasks. 
+## Project Overview
+#### An API App that allows users to GET, CREATE, UPDATE, and DELETE their todo tasks. 
 
-# Each task item contains the following information:
+#### Each task item contains the following information:
 *  Title
 *  Description
 *  Status
 *  Due Date
 *  Category type
 
-# Features
+#### Features
 1. Create and assign categories.
 2. Dynamic Search/Filter and Sort functionality.
 
-### Setup
+## Setup
 1. To call API Endpoints in VSCode, please install the ``REST Client`` VSCode Extension. Else, open up Postman, set base URL to ``http://localhost:3005`` and copy/paste desired request body from one of the endpoints in the ``route.rest`` file to the Postman body.
 2. Run `npm install` .
 3. To start the development server, please run `npm run dev` .
